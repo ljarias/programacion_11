@@ -16,6 +16,9 @@ def dividir(a, b):
         return "Error: no se puede dividir entre cero."
     return a / b
 
+def potencia(base, exponente):
+    return base ** exponente
+
 def pedir_numero(mensaje):
     while True:
         try:
@@ -30,18 +33,19 @@ def mostrar_menu():
     print("2. Restar")
     print("3. Multiplicar")
     print("4. Dividir")
-    print("5. Salir")
+    print("5. Elevar a una potencia")
+    print("6. Salir")
 
 def main():
     while True:
         mostrar_menu()
         opcion = input("Elige una opción: ")
 
-        if opcion == "5":
+        if opcion == "6":
             print("Gracias por usar la calculadora. ¡Nos vemos!")
             break
 
-        if opcion in ["1", "2", "3", "4"]:
+        if opcion in ["1", "2", "3", "4", "5"]:
             num1 = pedir_numero("Escribe el primer número: ")
             num2 = pedir_numero("Escribe el segundo número: ")
 
@@ -53,7 +57,9 @@ def main():
                 resultado = multiplicar(num1, num2)
             elif opcion == "4":
                 resultado = dividir(num1, num2)
-
+            elif opcion == "5":
+                resultado = potencia(num1, num2)
+                
             print("Resultado:", resultado)
         else:
             print("Opción no válida. Intenta nuevamente.")
