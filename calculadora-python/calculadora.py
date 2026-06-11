@@ -1,5 +1,6 @@
 # Calculadora básica en Python
 # Proyecto inicial para publicar en GitHub
+# Autor: Leonardo Arias
 
 def sumar(a, b):
     return a + b
@@ -24,7 +25,7 @@ def pedir_numero(mensaje):
             print("Dato inválido. Escribe un número, por favor.")
 
 def mostrar_menu():
-    print("\n--- CALCULADORA PYTHON ---")
+    print("\n--- CALCULADORA EN PYTHON ---")
     print("1. Sumar")
     print("2. Restar")
     print("3. Multiplicar")
