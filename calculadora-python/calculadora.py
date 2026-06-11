@@ -1,6 +1,6 @@
 # Calculadora básica en Python
 # Proyecto inicial para publicar en GitHub
-# Autor: Leonardo Arias
+# Autor: Leonardo Arias (11/06/2026)
 
 def sumar(a, b):
     return a + b
